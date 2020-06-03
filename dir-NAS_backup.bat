@@ -120,3 +120,4 @@ goto start1
 echo.
 echo exiting...
 pause
+exit
