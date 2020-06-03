@@ -1,5 +1,25 @@
 @echo off
-:: reset the lines with : to add verbose status printing
+
+:: =========================================================
+::  NAS SMB NETWORK SHARES CONNECTION TEST/RECONNECT
+:: =========================================================
+::
+::  1. i use this script to test and connect to NAS drives
+::     on windows machines at startup, as commonly windows
+::     fails to do this cleanly.
+::       - script can run at startup minimised if you create 
+::         a shortcut to it and set properties of that file
+::         to open 'minimised'
+::
+::  2. will repeatedly test connection until it is validated,
+::     before moving on to next drive.
+::
+::  3. currently has verbose status printing for tests,
+::     but can easily be recommented to remove this.
+::       - see 'if' sections for each test
+::       - see relevant echo
+::
+:: =========================================================
 
 echo testing NAS drive connections status
 
